@@ -3,26 +3,35 @@ package exercicios.ex001;
 
 public class Calculadora{
 
-    Double numA, numB;
+    double numA, numB;
 
-    Double somar(){
+    double somar(){
         return numA + numB;
     }
 
-    Double subtrair(){
+    double subtrair(){
         return numA - numB;
     }
 
-    Double multiplicar(){
+    double multiplicar(){
         return numA * numB;
     }
 
-    Double dividir(){
+    double dividir(){
         return numA / numB;
     }
 
     boolean verificarNumeroPrimo(int num){
+        
+        //Verifica se existe algum numero divisivel
+        for(int i = 3; i < num; i+=2){
+            if(num%i == 0){
+                return false;
+            }
+        }
+
         return (num >=2 && num%2 == 1);
+    
     }
 
     

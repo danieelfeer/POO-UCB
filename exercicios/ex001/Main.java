@@ -9,11 +9,17 @@ public class Main{
         calculadora.numA = 2.0;
         calculadora.numB = 3.0;
 
+
         System.out.println("Soma: " + calculadora.somar());
         System.out.println("Subtração: " + calculadora.subtrair());
         System.out.println("Multiplicação: " + calculadora.multiplicar());
         System.out.println("Divisão: " + calculadora.dividir());
-        System.out.println("É primo? " + calculadora.verificarNumeroPrimo(104729));
+        
+        
+        for(int i = 0; i <= 5; i++){
+            System.out.println( i + " é primo? " + calculadora.verificarNumeroPrimo(i));
+        }
+        
         
     }
 
