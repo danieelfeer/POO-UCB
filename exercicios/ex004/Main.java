@@ -21,7 +21,7 @@ public class Main {
 
         episodio1.reproduzir();
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50; i++) {
             episodio1.curtir();
         }
 
